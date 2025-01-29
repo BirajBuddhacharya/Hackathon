@@ -1,6 +1,5 @@
-
 @import "tailwindcss";
-/* 
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -15,7 +14,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+  
 a {
   font-weight: 500;
   color: #646cff;
@@ -68,4 +67,21 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-} */
+}
+
+@font-face {
+  font-family: "misto";
+  src: url("/src/assets/fonts/Misto.woff2") format("woff2"),
+    url("/src/assets/fonts/Misto.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Controls how the font is displayed while loading */
+}
+@theme {
+  --color-primary: #646cff;
+  --color-card: #3A3939;
+  --color-secondary: var(--color-green-500);
+  --color-error: var(--color-red-500);
+  --color-success: var(--color-emerald-500);
+  /* Add more semantic colors as needed */
+}
