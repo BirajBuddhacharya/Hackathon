@@ -7,7 +7,7 @@ export default function NavBar() {
   const [isLogin, setIsLogin] = useState(true);
 
   return (
-    <main className=" bg-zinc-800 h-15 mx-10 my-2 rounded-lg px-2  flex justify-between ">
+    <main className=" bg-zinc-800 h-15 mx-10 py-4 mt-4 rounded-lg   flex justify-between ">
       <div>
         <img
           src="logo.jpg"
