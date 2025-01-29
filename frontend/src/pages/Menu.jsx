@@ -106,63 +106,14 @@ export default function Menu() {
   ];
 
   return (
-    // <main>
-    //   <div className="flex m-10 relative h-screen">
-    //     {/* Sidebar */}
-    //     <div className="w-[20%] h-full flex flex-col bg-zinc-300 gap-4 px-3 fixed left-0 overflow-y-scroll">
-    //       <h1 className="font-bold text-2xl">Food Menu</h1>
-    //       {menuItems.map((item, index) => (
-    //         <div key={index} className="flex items-center gap-2">
-    //           <button className="p-2 px-4 rounded-lg bg-zinc-300 w-full hover:bg-zinc-400">
-    //             {item.label}
-    //           </button>
-    //         </div>
-    //       ))}
-    //     </div>
-
-    //     {/* Food Items Section (Scrollable) */}
-    //     <div className="w-[80%] ml-[20%] bg-zinc-300 flex flex-wrap gap-2 p-4 h-screen overflow-y-auto">
-    //       {card.map((item, index) => (
-    //         <div
-    //           key={index}
-    //           className="flex bg-zinc-300 h-90 px-2 py-4 w-80 flex-col items-center rounded-lg gap-3 border border-zinc-800 hover:border-zinc-500 shadow-2xl"
-    //         >
-    //           <img src={item.img} alt="" className="w-78 rounded-lg" />
-    //           <div className="w-78 flex flex-col gap-2">
-    //             <div className="flex justify-between">
-    //               <p className="font-semibold font-serif">
-    //                 {item.name.length > 20
-    //                   ? item.name.slice(0, 20) + "..."
-    //                   : item.name}
-    //               </p>
-    //               <p>{item.price}</p>
-    //             </div>
-    //             <div>
-    //               <p>
-    //                 {item.description.length > 40
-    //                   ? item.description.slice(0, 40) + "..."
-    //                   : item.description}
-    //               </p>
-    //             </div>
-    //           </div>
-    //           <div>
-    //             <button className="bg-black text-white p-2 px-4 rounded-lg">
-    //               Add to Cart
-    //             </button>
-    //           </div>
-    //         </div>
-    //       ))}
-    //     </div>
-    //   </div>
-    // </main>
     <main>
       <div className="flex m-10 relative h-screen">
         {/* Sidebar (Scrollable) */}
-        <div className=" scrollable-container w-[20%] h-screen flex flex-col bg-zinc-300 gap-4 px-3 fixed left-0 overflow-y-auto">
+        <div className=" scrollable-container w-[20%] h-screen flex  flex-col bg-zinc-300 gap-4 px-3 fixed left-0 overflow-y-auto ">
           <h1 className="font-bold text-2xl">Food Menu</h1>
           {menuItems.map((item, index) => (
-            <div key={index} className="flex items-center gap-2">
-              <button className="p-2 px-4 rounded-lg bg-zinc-300 w-full hover:bg-zinc-400">
+            <div key={index} className="flex items-center gap-2 ">
+              <button className="p-2 px-4 rounded-lg border border-zinc-800 bg-zinc-100  w-full hover:bg-zinc-400 bg-pink-100">
                 {item.label}
               </button>
             </div>
@@ -170,7 +121,7 @@ export default function Menu() {
         </div>
 
         {/* Food Items Section (Scrollable) */}
-        <div className="w-[80%] ml-[20%] bg-zinc-300 flex flex-wrap gap-2 p-4 h-screen scrollable-container overflow-y-auto">
+        <div className="w-[80%] ml-[20%] bg-zinc-300 flex flex-wrap gap-3 p-4 h-screen scrollable-container overflow-y-auto  ">
           {card.map((item, index) => (
             <div
               key={index}
