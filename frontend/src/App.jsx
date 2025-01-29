@@ -24,6 +24,7 @@ import Footer from "./component/Footer";
 import NavBar from "./component/NavBar";
 function App() {
   return (
+<<<<<<< Updated upstream
     <>
       <BrowserRouter>
         <NavBar />
