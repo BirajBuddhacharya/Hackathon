@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-import React from "react";
-
-export default function Register() {
-  return <div>Register</div>;
-}
-=======
 export default function Register(){
     return (
         <>
@@ -12,4 +5,3 @@ export default function Register(){
         </>
     )
 }
->>>>>>> jiban
