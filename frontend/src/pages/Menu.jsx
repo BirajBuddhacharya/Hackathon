@@ -1,4 +1,97 @@
- t_2", label: "Dessert" },
+import React from "react";
+
+export default function Menu() {
+  const card = [
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Classic Cheeseburger",
+      price: "$8.99",
+      description:
+        "Juicy beef patty with melted cheese, lettuce, and tomato. djhsdhsh sdjfhdfh shfgsd hdfhdflk hvdhjvdj jshjdh",
+      FoodResult: "Fast Food",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Pepperoni Pizza",
+      price: "$12.99",
+      description: "Thin-crust pizza topped with pepperoni and mozzarella.",
+      FoodResult: "Italian",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Salmon Sushi Roll",
+      price: "$14.99",
+      description: "Fresh salmon with rice and seaweed, served with soy sauce.",
+      FoodResult: "Japanese",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Spaghetti Carbonara",
+      price: "$10.99",
+      description: "Creamy pasta with crispy bacon and parmesan cheese.",
+      FoodResult: "Italian",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Spicy Chicken Taco",
+      price: "$7.99",
+      description: "Soft tortilla filled with spicy grilled chicken and salsa.",
+      FoodResult: "Mexican",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Caesar Salad",
+      price: "$6.99",
+      description: "Fresh romaine lettuce with Caesar dressing and croutons.",
+      FoodResult: "Healthy",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Grilled Ribeye Steak",
+      price: "$19.99",
+      description:
+        "Tender ribeye steak grilled to perfection, served with fries.",
+      FoodResult: "Steakhouse",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Chocolate Ice Cream",
+      price: "$4.99",
+      description: "Rich chocolate ice cream with a creamy texture.",
+      FoodResult: "Dessert",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Tomato Basil Soup",
+      price: "$5.99",
+      description: "Warm tomato soup with fresh basil and a hint of garlic.",
+      FoodResult: "Soup",
+    },
+    {
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      name: "Cappuccino",
+      price: "$3.99",
+      description: "Espresso with steamed milk and frothy foam.",
+      FoodResult: "Beverage",
+    },
+  ];
+
+  const menuItems = [
+    { id: 1, name: "chicken", label: "Chicken" },
+    { id: 2, name: "veg", label: "Vegetarian" },
+    { id: 3, name: "fish", label: "Fish" },
+    { id: 4, name: "drinks", label: "Drinks" },
+    { id: 5, name: "snacks", label: "Snacks" },
+    { id: 6, name: "dessert", label: "Dessert" },
+    { id: 7, name: "beverage", label: "Beverage" },
+    { id: 8, name: "fast_food", label: "Fast Food" },
+    { id: 9, name: "momo", label: "Momo" },
+    { id: 10, name: "chicken_2", label: "Chicken" },
+    { id: 11, name: "veg_2", label: "Vegetarian" },
+    { id: 12, name: "fish_2", label: "Fish" },
+    { id: 13, name: "drinks_2", label: "Drinks" },
+    { id: 14, name: "snacks_2", label: "Snacks" },
+    { id: 15, name: "dessert_2", label: "Dessert" },
     { id: 16, name: "beverage_2", label: "Beverage" },
     { id: 17, name: "fast_food_2", label: "Fast Food" },
     { id: 18, name: "momo_2", label: "Momo" },
