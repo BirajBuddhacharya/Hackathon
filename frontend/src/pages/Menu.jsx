@@ -3,7 +3,7 @@ import React from "react";
 export default function Menu() {
   const card = [
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Classic Cheeseburger",
       price: "$8.99",
       description:
@@ -11,42 +11,42 @@ export default function Menu() {
       FoodResult: "Fast Food",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Pepperoni Pizza",
       price: "$12.99",
       description: "Thin-crust pizza topped with pepperoni and mozzarella.",
       FoodResult: "Italian",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Salmon Sushi Roll",
       price: "$14.99",
       description: "Fresh salmon with rice and seaweed, served with soy sauce.",
       FoodResult: "Japanese",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Spaghetti Carbonara",
       price: "$10.99",
       description: "Creamy pasta with crispy bacon and parmesan cheese.",
       FoodResult: "Italian",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Spicy Chicken Taco",
       price: "$7.99",
       description: "Soft tortilla filled with spicy grilled chicken and salsa.",
       FoodResult: "Mexican",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Caesar Salad",
       price: "$6.99",
       description: "Fresh romaine lettuce with Caesar dressing and croutons.",
       FoodResult: "Healthy",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Grilled Ribeye Steak",
       price: "$19.99",
       description:
@@ -54,21 +54,21 @@ export default function Menu() {
       FoodResult: "Steakhouse",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Chocolate Ice Cream",
       price: "$4.99",
       description: "Rich chocolate ice cream with a creamy texture.",
       FoodResult: "Dessert",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Tomato Basil Soup",
       price: "$5.99",
       description: "Warm tomato soup with fresh basil and a hint of garlic.",
       FoodResult: "Soup",
     },
     {
-      img: "https://images.unsplash.com/photo-1606787366850-de6330128bfc",
+      img: "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       name: "Cappuccino",
       price: "$3.99",
       description: "Espresso with steamed milk and frothy foam.",
@@ -106,29 +106,29 @@ export default function Menu() {
   ];
 
   return (
-    <main>
-      <div className="flex m-10 relative h-screen">
+    <main className="w-screen h-screen px-20 bg-neutral hideScrollBar">
+      <div className="flex relative h-screen">
         {/* Sidebar (Scrollable) */}
-        <div className=" scrollable-container w-[20%] h-screen flex  flex-col bg-zinc-300 gap-4 px-3 fixed left-0 overflow-y-auto ">
-          <h1 className="font-bold text-2xl">Food Menu</h1>
+        <div className=" scrollable-container w-[20%] bg-card p-5 rounded-xl hideScrollBar h-[30rem] flex flex-col gap-2 px-3 fixed left-12 top-1/2 transform -translate-y-1/2 overflow-y-auto ">
+          <div className="font-bold text-black text-xl text-white">Food Menu</div>
           {menuItems.map((item, index) => (
             <div key={index} className="flex items-center gap-2 ">
-              <button className="p-2 px-4 rounded-lg border border-zinc-800 bg-zinc-100  w-full hover:bg-zinc-400 bg-pink-100">
+              <button className="p-2 rounded-lg  w-full hover:bg-zinc-400 bg-pink-100">
                 {item.label}
               </button>
             </div>
           ))}
         </div>
 
-        {/* Food Items Section (Scrollable) */}
-        <div className="w-[80%] ml-[20%] bg-zinc-300 flex flex-wrap gap-3 p-4 h-screen scrollable-container overflow-y-auto  ">
+        {/* Food Items Section (Scrollable) */} 
+        <div className="w-[80%] h-[80%] overflow-hidden ml-55 mt-23 flex hideScrollBar flex-wrap gap-3 p-4 h-screen scrollable-container overflow-y-auto justify-center ">
           {card.map((item, index) => (
             <div
               key={index}
-              className="flex bg-zinc-300 h-90 px-2 py-4 w-80 flex-col items-center rounded-lg gap-3 border border-zinc-800 hover:border-zinc-500 shadow-2xl"
+              className="flex bg-card h-90 px-4 py-4 w-65 flex-col items-center rounded-lg gap-3 border border-zinc-800 hover:border-zinc-500 shadow-2xl"
             >
-              <img src={item.img} alt="" className="w-78 rounded-lg" />
-              <div className="w-78 flex flex-col gap-2">
+              <img src={item.img} alt="" className="w-full h-45 rounded-lg" />
+              <div className="w-full flex flex-col gap-2 text-left">
                 <div className="flex justify-between">
                   <p className="font-semibold font-serif">
                     {item.name.length > 20
@@ -136,7 +136,7 @@ export default function Menu() {
                       : item.name}
                   </p>
                   <p>{item.price}</p>
-                </div>
+                </div>  
                 <div>
                   <p>
                     {item.description.length > 40
@@ -146,9 +146,9 @@ export default function Menu() {
                 </div>
               </div>
               <div>
-                <button className="bg-black text-white p-2 px-4 rounded-lg">
+                <div className="bg-black text-white p-2 px-4 rounded-lg hover:border-primary">
                   Add to Cart
-                </button>
+                </div>
               </div>
             </div>
           ))}

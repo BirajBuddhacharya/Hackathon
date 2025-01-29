@@ -409,3 +409,14 @@ a:hover{
   margin-top: 1.5rem;
 }
 
+
+/* hide scroll bar  */
+/* Hide scrollbar for Webkit browsers */
+.hideScrollBar {
+  overflow: auto; /* or scroll */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+}
+.hideScrollBar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}

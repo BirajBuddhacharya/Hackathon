@@ -78,7 +78,9 @@ button:focus-visible {
   font-display: swap; /* Controls how the font is displayed while loading */
 }
 @theme {
-  --color-primary: #646cff;
+  --color-primary: #105A41;
+  --color-primary-light: #C4FFA5;
+  --color-neutral: #ECEDF3;
   --color-card: #3A3939;
   --color-secondary: var(--color-green-500);
   --color-error: var(--color-red-500);

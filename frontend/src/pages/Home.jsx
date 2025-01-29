@@ -12,9 +12,8 @@ export default function Home() {
       <div className="text-[4rem] font-bold">Tech Food</div>
       <div>Your next lunch is just a click away</div>
       <Link to='/menu'>
-        <div className="mt-2 py-2 px-5 bg-primary text-white rounded-full relative z-10 flex justify-center items-center items-center gap-1">
+        <div className="mt-2 py-3 px-7 bg-primary text-xl text-white rounded-full relative z-10 flex justify-center items-center items-center gap-1">
           <span>Explore Foods</span>
-          <img src={rightArrow} alt="" className="" />
         </div>
       </Link>
     </div>

@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Footer from "./component/Footer";
 import NavBar from "./component/NavBar";
 import Menu from "./pages/Menu";
+import Order from "./pages/Orders"
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/" element={<Home />} />
           <Route path="/menu" element={<Menu />} />
+          <Route path="/order" element={<Order />} />
         </Routes>
         {/* <Footer /> */}
       </BrowserRouter>

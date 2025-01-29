@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 export default function Login() {
   return (
     <>
-      <div className="h-screen w-screen flex justify-center items-center text-black">
+      <div className="h-screen w-screen flex justify-center items-center text-black bg-neutral">
         <div className="login-container h-[35rem]">
           <h2 className="form-title text-black">Log in with</h2>
           <SocialLogin />

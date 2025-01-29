@@ -17,17 +17,17 @@ export default function NavBar() {
       </div>
       <div className=" flex items-center gap-3">
         <Link to="/">
-          <span className="text-md rounded-xl  h-12 p-4 flex items-center text-white hover:text-primary hover:cursor-pointer">
+          <span className="text-md rounded-xl  h-12 p-4 flex items-center text-white hover:text-primary-light hover:cursor-pointer">
             Home
           </span>
         </Link>
         <Link to="/menu">
-          <span className="text-md h-12 p-4 rounded-xl hover:text-primary hover:cursor-pointer flex items-center text-white">
+          <span className="text-md h-12 p-4 rounded-xl hover:text-primary-light hover:cursor-pointer flex items-center text-white">
             Menu
           </span>
         </Link>
         <Link to="/order">
-          <span className="text-md h-12 rounded-xl p-4 hover:text-primary hover:cursor-pointer flex items-center text-white">
+          <span className="text-md h-12 rounded-xl p-4 hover:text-primary-light hover:cursor-pointer flex items-center text-white">
             Order
           </span>
         </Link>
